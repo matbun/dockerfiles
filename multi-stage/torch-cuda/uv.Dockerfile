@@ -1,7 +1,7 @@
 # Source: https://dev.to/kummerer94/multi-stage-docker-builds-for-pyton-projects-using-uv-223g
 
 # Base image
-FROM nvcr.io/nvidia/pytorch:23.09-py3 as build
+FROM nvcr.io/nvidia/pytorch:24.09-py3 as build
 
 RUN apt-get update && apt-get install -y build-essential curl python3.10-venv
 ENV VIRTUAL_ENV=/opt/venv \
